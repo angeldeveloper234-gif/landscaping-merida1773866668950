@@ -219,22 +219,22 @@ export const config: Config = {
         {
             title: "Jardín Tropical",
             category: "Residencial",
-            image: "https://images.unsplash.com/photo-1598902108854-10e335adac99?q=80&w=800&auto=format&fit=crop"
+            image: "https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?q=80&w=800&auto=format&fit=crop"
         },
         {
             title: "Riego Automatizado",
             category: "Instalación",
-            image: "https://images.unsplash.com/photo-1558435186-d31d136676b9?q=80&w=800&auto=format&fit=crop"
+            image: "https://images.unsplash.com/photo-1563514227147-6d2ff665a6a0?q=80&w=800&auto=format&fit=crop"
         },
         {
             title: "Paisajismo Moderno",
             category: "Diseño",
-            image: "https://images.unsplash.com/photo-1611516491426-03025e6043c8?q=80&w=800&auto=format&fit=crop"
+            image: "https://images.unsplash.com/photo-1598902108854-10e335adac99?q=80&w=800&auto=format&fit=crop"
         },
         {
             title: "Mantenimiento",
             category: "Servicio",
-            image: "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?q=80&w=800&auto=format&fit=crop"
+            image: "https://images.unsplash.com/photo-1592150621744-aca64f48394a?q=80&w=800&auto=format&fit=crop"
         }
     ],
 

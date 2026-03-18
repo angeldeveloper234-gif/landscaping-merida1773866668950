@@ -4,25 +4,25 @@ export function Footer() {
     const { branding } = config;
 
     return (
-        <footer className="bg-[#020617] text-white pt-20 pb-12 border-t border-white/5 overflow-hidden">
+        <footer className="bg-background text-white pt-20 pb-12 border-t border-primary/5 overflow-hidden">
             <div className="container mx-auto px-6">
                 <div className="flex flex-col items-center justify-center mb-16 text-center">
-                    <h2 className="text-[10vw] leading-none font-display font-bold text-white/[0.03] select-none tracking-widest uppercase">
+                    <h2 className="text-[10vw] leading-none font-display font-bold text-primary/[0.03] select-none tracking-widest uppercase">
                         {branding.name.split(' ')[0]}
                     </h2>
                 </div>
 
-                <div className="flex flex-col md:flex-row justify-between items-end border-t border-white/5 pt-8">
+                <div className="flex flex-col md:flex-row justify-between items-end border-t border-primary/5 pt-8">
                     <div className="mb-8 md:mb-0">
                         <p className="text-zinc-500 text-sm font-sans mb-1">
-                            <span className="text-[#FF7F50] font-black tracking-wider">{branding.logo}</span> — {branding.trade}
+                            <span className="text-primary font-black tracking-wider">{branding.logo}</span> — {branding.trade}
                         </p>
                         <p className="text-zinc-600 text-[10px] uppercase tracking-[0.2em]">
                             © {new Date().getFullYear()} {branding.name}. Todos los derechos reservados.
                         </p>
                     </div>
                     <div className="flex gap-8">
-                        <a href="#" className="text-zinc-500 hover:text-[#FF7F50] text-[10px] uppercase tracking-widest transition-colors font-bold">Aviso de Privacidad</a>
+                        <a href="#" className="text-zinc-500 hover:text-primary text-[10px] uppercase tracking-widest transition-colors font-bold">Aviso de Privacidad</a>
                     </div>
                 </div>
             </div>

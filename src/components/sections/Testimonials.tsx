@@ -6,17 +6,17 @@ export function Testimonials() {
     const { testimonials } = config;
 
     return (
-        <section id="testimonials" className="py-32 bg-[#0D0C0C] relative overflow-hidden border-t border-white/5">
+        <section id="testimonials" className="py-32 bg-background relative overflow-hidden border-t border-primary/5">
             {/* Decorative element */}
-            <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-[#E07B2A]/5 blur-[100px] rounded-full pointer-events-none" />
+            <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-primary/5 blur-[100px] rounded-full pointer-events-none" />
 
             <div className="container mx-auto px-6">
                 <div className="mb-20">
-                    <p className="text-[#E07B2A] font-sans text-xs tracking-[0.4em] uppercase font-black mb-4">
+                    <p className="text-primary font-sans text-xs tracking-[0.4em] uppercase font-black mb-4">
                         Lo Que Dicen Nuestros Clientes
                     </p>
-                    <h2 className="text-4xl md:text-6xl font-display text-white tracking-widest">
-                        TRABAJOS QUE <span className="text-[#E07B2A]">HABLAN</span>
+                    <h2 className="text-4xl md:text-6xl font-display text-white tracking-widest uppercase">
+                        TRABAJOS QUE <span className="text-primary italic">HABLAN</span>
                     </h2>
                 </div>
 
@@ -28,12 +28,12 @@ export function Testimonials() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: i * 0.1 }}
-                            className="bg-[#111010] border border-white/5 p-8 md:p-10 hover:border-[#E07B2A]/30 transition-all duration-500 group relative overflow-hidden"
+                            className="bg-accent-dark/30 border border-primary/10 p-8 md:p-10 hover:border-primary/50 transition-all duration-500 group relative overflow-hidden shadow-2xl"
                         >
                             {/* Quote watermark */}
                             <Quote
                                 size={80}
-                                className="absolute -top-2 -right-2 text-[#E07B2A]/5 group-hover:text-[#E07B2A]/10 transition-colors"
+                                className="absolute -top-2 -right-2 text-primary/5 group-hover:text-primary/10 transition-colors"
                                 fill="currentColor"
                             />
 
@@ -41,7 +41,7 @@ export function Testimonials() {
                                 {/* Stars */}
                                 <div className="flex gap-1 mb-6">
                                     {[...Array(5)].map((_, index) => (
-                                        <Star key={index} size={16} className="fill-[#E07B2A] text-[#E07B2A]" />
+                                        <Star key={index} size={16} className="fill-primary text-primary" />
                                     ))}
                                 </div>
 
@@ -52,15 +52,15 @@ export function Testimonials() {
                                 {/* Tags */}
                                 <div className="flex flex-wrap gap-2 mb-8">
                                     {item.tags.map((tag: string, idx: number) => (
-                                        <span key={idx} className="bg-[#E07B2A]/10 text-[#E07B2A] text-[10px] uppercase tracking-widest font-bold px-3 py-1 border border-[#E07B2A]/20">
+                                        <span key={idx} className="bg-primary/10 text-primary text-[10px] uppercase tracking-widest font-bold px-3 py-1 border border-primary/20">
                                             {tag}
                                         </span>
                                     ))}
                                 </div>
 
                                 {/* Author */}
-                                <div className="flex items-center gap-4 pt-6 border-t border-white/5">
-                                    <div className="w-11 h-11 bg-[#E07B2A]/20 flex items-center justify-center text-[#E07B2A] font-display font-bold text-xl flex-shrink-0">
+                                <div className="flex items-center gap-4 pt-6 border-t border-primary/5">
+                                    <div className="w-11 h-11 bg-primary/20 flex items-center justify-center text-primary font-display font-bold text-xl flex-shrink-0">
                                         {item.name.charAt(0)}
                                     </div>
                                     <div>

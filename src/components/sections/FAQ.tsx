@@ -29,28 +29,28 @@ export function FAQ() {
     const [openIndex, setOpenIndex] = useState<number | null>(null);
 
     return (
-        <section id="faq" className="py-32 bg-[#0D0C0C] text-white relative border-t border-white/5">
+        <section id="faq" className="py-32 bg-background text-white relative border-t border-primary/5">
             <div className="container mx-auto px-6 max-w-4xl">
                 <div className="text-center mb-20">
-                    <p className="text-[#E07B2A] font-sans text-xs tracking-[0.4em] uppercase font-black mb-4">
+                    <p className="text-primary font-sans text-xs tracking-[0.4em] uppercase font-black mb-4">
                         Despeja tus dudas
                     </p>
                     <h2 className="text-4xl md:text-6xl font-display tracking-widest uppercase">
-                        Preguntas <span className="text-[#E07B2A]">Frecuentes</span>
+                        Preguntas <span className="text-primary italic">Frecuentes</span>
                     </h2>
                 </div>
 
                 <div className="space-y-4">
                     {faqs.map((faq, i) => (
-                        <div key={i} className="border border-white/5 bg-[#111010] hover:border-[#E07B2A]/30 transition-colors">
+                        <div key={i} className="border border-primary/10 bg-accent-dark/30 hover:border-primary/50 transition-colors shadow-lg">
                             <button
                                 onClick={() => setOpenIndex(openIndex === i ? null : i)}
                                 className="flex items-center justify-between w-full p-8 text-left transition-colors group"
                             >
-                                <span className="text-lg font-sans font-bold tracking-wider uppercase group-hover:text-[#E07B2A] transition-colors pr-8">
+                                <span className="text-lg font-sans font-bold tracking-wider uppercase group-hover:text-primary transition-colors pr-8">
                                     {faq.q}
                                 </span>
-                                <div className="text-[#E07B2A] bg-[#E07B2A]/10 p-2">
+                                <div className="text-primary bg-primary/10 p-2">
                                     {openIndex === i ? <Minus className="w-4 h-4" /> : <Plus className="w-4 h-4" />}
                                 </div>
                             </button>
@@ -63,7 +63,7 @@ export function FAQ() {
                                         exit={{ height: 0, opacity: 0 }}
                                         className="overflow-hidden"
                                     >
-                                        <div className="p-8 pt-0 text-zinc-400 font-sans font-light leading-relaxed border-t border-white/5 mt-2">
+                                        <div className="p-8 pt-0 text-zinc-400 font-sans font-light leading-relaxed border-t border-primary/5 mt-2">
                                             {faq.a}
                                         </div>
                                     </motion.div>

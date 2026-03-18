@@ -6,7 +6,7 @@ export function Home() {
     const { features } = config;
 
     return (
-        <main className="relative selection:bg-[#E07B2A] selection:text-black">
+        <main className="relative selection:bg-primary selection:text-background">
             <Hero />
             {features.showStats && <Stats />}
             <Features />

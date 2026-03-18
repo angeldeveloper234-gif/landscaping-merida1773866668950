@@ -58,7 +58,7 @@ export function CustomCursor() {
             style={{ x: cursorX, y: cursorY }}
         >
             <motion.div
-                className="bg-[#E07B2A] rounded-full"
+                className="bg-primary rounded-full shadow-[0_0_15px_rgba(20,184,166,0.5)]"
                 style={{ width: CURSOR_SIZE, height: CURSOR_SIZE }}
                 animate={{ scale: isHovering ? HOVER_SCALE : 1 }}
                 transition={{ duration: 0.15 }}

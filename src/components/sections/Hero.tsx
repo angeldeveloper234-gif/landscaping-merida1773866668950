@@ -26,13 +26,13 @@ export function Hero({ dynamic_city, project_counter, hook_headline }: HeroProps
                     alt="Landscaping Mérida"
                     className="w-full h-full object-cover opacity-20"
                 />
-                <div className="absolute inset-0 bg-gradient-to-r from-[#020617] via-[#020617]/90 to-transparent" />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#020617] via-transparent to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-r from-background via-background/90 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent" />
                 <div className="texture-overlay" />
             </div>
 
-            {/* Blue accent glow */}
-            <div className="absolute top-1/2 left-1/3 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-[#1E3A8A]/20 blur-[100px] rounded-full pointer-events-none" />
+            {/* Teal accent glow */}
+            <div className="absolute top-1/2 left-1/3 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-primary/20 blur-[100px] rounded-full pointer-events-none" />
 
             <div className="container mx-auto px-6 relative z-10">
                 <motion.div
@@ -42,8 +42,8 @@ export function Hero({ dynamic_city, project_counter, hook_headline }: HeroProps
                 >
                     {/* Trade Badge */}
                     <div className="flex items-center gap-4 mb-8 overflow-hidden">
-                        <div className="h-[1px] w-8 bg-[#FF7F50]"></div>
-                        <p className="text-[#FF7F50] font-sans text-xs tracking-[0.4em] uppercase font-black active-badge whitespace-nowrap">
+                        <div className="h-[1px] w-8 bg-primary"></div>
+                        <p className="text-primary font-sans text-xs tracking-[0.4em] uppercase font-black active-badge whitespace-nowrap">
                             {branding.slogan}
                         </p>
                     </div>
@@ -57,7 +57,7 @@ export function Hero({ dynamic_city, project_counter, hook_headline }: HeroProps
                             <span className="block text-white text-[64px] md:text-[120px] tracking-widest uppercase leading-[0.9]">
                                 {displayHeadline}
                             </span>
-                            <span className="block text-[#FF7F50] text-[64px] md:text-[120px] tracking-widest uppercase leading-[0.9] md:ml-16">
+                            <span className="block text-primary text-[64px] md:text-[120px] tracking-widest uppercase leading-[0.9] md:ml-16">
                                 {specialization.title}
                             </span>
                         </h1>
@@ -70,13 +70,13 @@ export function Hero({ dynamic_city, project_counter, hook_headline }: HeroProps
                     transition={{ duration: 1, delay: 0.3 }}
                     className="max-w-xl mb-12"
                 >
-                    <p className="text-lg md:text-xl text-zinc-400 font-sans font-light leading-relaxed border-l-4 border-[#FF7F50]/50 pl-6">
+                    <p className="text-lg md:text-xl text-zinc-400 font-sans font-light leading-relaxed border-l-4 border-primary/50 pl-6">
                         Transformamos tus espacios exteriores en oasis de tranquilidad en <span className="text-white font-medium">{displayCity}</span>.
                         Diseño, ejecución y mantenimiento con garantía.
                     </p>
 
                     <div className="mt-6 flex items-center gap-3 text-zinc-500 font-sans text-sm">
-                        <MapPin size={14} className="text-[#FF7F50] flex-shrink-0" />
+                        <MapPin size={14} className="text-primary flex-shrink-0" />
                         <span>{localAnchor}, {displayCity}</span>
                     </div>
                 </motion.div>
@@ -90,14 +90,14 @@ export function Hero({ dynamic_city, project_counter, hook_headline }: HeroProps
                     <div className="flex flex-col gap-3">
                         <Button
                             size="lg"
-                            className="bg-[#FF7F50] text-white hover:brightness-110 rounded-none px-10 py-7 text-sm tracking-widest uppercase font-black shadow-[0_20px_40px_-15px_rgba(255,127,80,0.4)] group transition-all duration-500"
+                            className="bg-primary text-white hover:brightness-110 rounded-none px-10 py-7 text-sm tracking-widest uppercase font-black shadow-[0_20px_40px_-15px_rgba(20,184,166,0.4)] group transition-all duration-500"
                             onClick={() => window.location.href = '#contact'}
                         >
                             COTIZAR AHORA
                             <ArrowRight className="ml-3 w-5 h-5 group-hover:translate-x-2 transition-transform" />
                         </Button>
 
-                        <div className="flex items-center gap-2 text-[10px] text-[#FF7F50] uppercase tracking-widest font-black ml-1">
+                        <div className="flex items-center gap-2 text-[10px] text-primary uppercase tracking-widest font-black ml-1">
                             <ShieldCheck size={12} />
                             <span>Garantía de satisfacción</span>
                         </div>

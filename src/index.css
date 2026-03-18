@@ -24,9 +24,9 @@
 
 @layer utilities {
     .glass-panel {
-        background-color: rgba(30, 58, 138, 0.3);
+        background-color: rgba(20, 184, 166, 0.1);
         backdrop-filter: blur(12px);
-        border: 1px solid rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(20, 184, 166, 0.1);
     }
 
     .active-badge {
@@ -72,7 +72,7 @@
     }
 
     .custom-scrollbar::-webkit-scrollbar-thumb {
-        background-color: #FF7F50;
+        background-color: #14B8A6;
         border-radius: 9999px;
     }
 

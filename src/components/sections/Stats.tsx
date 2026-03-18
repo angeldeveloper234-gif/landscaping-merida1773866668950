@@ -11,9 +11,9 @@ export function Stats() {
     ];
 
     return (
-        <section className="py-24 bg-[#111010] border-y border-white/5 relative overflow-hidden">
-            {/* Subtle orange glow */}
-            <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[200px] bg-[#E07B2A]/5 blur-[80px] rounded-full pointer-events-none" />
+        <section className="py-24 bg-background border-y border-primary/5 relative overflow-hidden">
+            {/* Subtle teal glow */}
+            <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[200px] bg-primary/5 blur-[80px] rounded-full pointer-events-none" />
 
             <div className="container mx-auto px-6">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
@@ -24,16 +24,16 @@ export function Stats() {
                             whileInView={{ opacity: 1, scale: 1 }}
                             viewport={{ once: true }}
                             transition={{ delay: index * 0.15, duration: 0.8 }}
-                            className="text-center md:text-left border-l-4 border-[#E07B2A]/30 pl-8 hover:border-[#E07B2A] transition-colors duration-500"
+                            className="text-center md:text-left border-l-4 border-primary/30 pl-8 hover:border-primary transition-colors duration-500"
                         >
                             <p className="text-zinc-500 font-sans text-xs tracking-[0.3em] uppercase mb-3 font-bold">
                                 {item.label}
                             </p>
                             <div className="flex items-end gap-1">
-                                <span className="text-6xl md:text-8xl font-display font-bold tabular-nums tracking-tight text-white">
+                                <span className="text-6xl md:text-8xl font-display font-bold tabular-nums tracking-tight text-white italic">
                                     {item.value}
                                 </span>
-                                <span className="text-4xl md:text-5xl font-display font-bold text-[#E07B2A] mb-2">
+                                <span className="text-4xl md:text-5xl font-display font-bold text-primary mb-2">
                                     {item.suffix}
                                 </span>
                             </div>

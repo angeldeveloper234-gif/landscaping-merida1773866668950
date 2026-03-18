@@ -7,19 +7,19 @@ export function Products() {
     const { products } = config;
 
     return (
-        <section id="products" className="py-32 bg-[#0D0C0C] relative border-t border-white/5">
+        <section id="products" className="py-32 bg-background relative border-t border-primary/5">
             <div className="container mx-auto px-6">
                 <div className="flex flex-col md:flex-row md:items-end justify-between mb-20 gap-8">
                     <div>
-                        <p className="text-[#E07B2A] font-sans text-xs tracking-[0.4em] uppercase font-black mb-4">
+                        <p className="text-primary font-sans text-xs tracking-[0.4em] uppercase font-black mb-4">
                             Catálogo de Taller
                         </p>
                         <h2 className="text-4xl md:text-6xl font-display text-white tracking-widest uppercase mb-0">
-                            PRODUCTOS <span className="text-[#E07B2A]">DISPONIBLES</span>
+                            PRODUCTOS <span className="text-primary italic">DISPONIBLES</span>
                         </h2>
                     </div>
-                    <Button variant="outline" className="border-white/10 text-white rounded-none tracking-widest text-[10px] h-12">
-                        VER TODO EL CATÁLOGO <ArrowRight className="ml-2 w-4 h-4 text-[#E07B2A]" />
+                    <Button variant="outline" className="border-primary/20 text-white rounded-none tracking-widest text-[10px] h-12 hover:bg-primary hover:text-background transition-all">
+                        VER TODO EL CATÁLOGO <ArrowRight className="ml-2 w-4 h-4 text-primary group-hover:text-background" />
                     </Button>
                 </div>
 
@@ -31,15 +31,15 @@ export function Products() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: i * 0.1 }}
-                            className="bg-[#111010] border border-white/5 flex flex-col group hover:border-[#E07B2A]/30 transition-all duration-500"
+                            className="bg-accent-dark/30 border border-primary/10 flex flex-col group hover:border-primary/50 transition-all duration-500 shadow-xl"
                         >
                             <div className="aspect-square overflow-hidden relative">
                                 <img
                                     src={product.image}
                                     alt={product.name}
-                                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0"
                                 />
-                                <div className="absolute top-6 left-6 bg-[#E07B2A] text-white font-display text-xl px-4 py-1 tracking-widest">
+                                <div className="absolute top-6 left-6 bg-primary text-background font-display text-xl px-4 py-1 tracking-widest font-black">
                                     {product.price}
                                 </div>
                             </div>
@@ -53,10 +53,10 @@ export function Products() {
                                 </p>
                                 
                                 <Button 
-                                    className="w-full bg-white/5 hover:bg-[#E07B2A] text-white hover:text-black transition-all duration-500 rounded-none h-14 tracking-[0.2em] font-black text-[10px] uppercase"
+                                    className="w-full bg-primary/10 border border-primary/20 hover:bg-primary text-primary hover:text-background transition-all duration-500 rounded-none h-14 tracking-[0.2em] font-black text-[10px] uppercase shadow-lg shadow-primary/5"
                                     onClick={() => window.location.href = `https://wa.me/${config.demoUser.whatsapp.replace('+', '')}?text=Hola, me interesa el producto: ${product.name}`}
                                 >
-                                    Consutar por WhatsApp <ShoppingCart className="ml-2 w-4 h-4" />
+                                    Consultar por WhatsApp <ShoppingCart className="ml-2 w-4 h-4" />
                                 </Button>
                             </div>
                         </motion.div>

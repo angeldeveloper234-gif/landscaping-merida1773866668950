@@ -8,21 +8,21 @@ const config: Config = {
     theme: {
         extend: {
             colors: {
-                background: "#020617", // Dark Blue/Slate 950
-                foreground: "#fafafa",
+                background: "#011A1B", // Dark Teal 950
+                foreground: "#E0F2F1", // Teal 50
                 primary: {
-                    DEFAULT: "#FF7F50", // Action Orange
+                    DEFAULT: "#14B8A6", // Teal 500 (Verde Agua)
                     foreground: "#ffffff",
                 },
                 secondary: {
-                    DEFAULT: "#1E3A8A", // Dark Blue Accent
+                    DEFAULT: "#0D9488", // Teal 600
                     foreground: "#ffffff",
                 },
                 accent: {
-                    orange: "#FF7F50",
-                    blue: "#1E3A8A",
+                    teal: "#2DD4BF",
+                    dark: "#042f2e",
                 },
-                border: "rgba(255,255,255,0.08)",
+                border: "rgba(20, 184, 166, 0.1)",
             },
             fontFamily: {
                 sans: ["Roboto", "sans-serif"],
