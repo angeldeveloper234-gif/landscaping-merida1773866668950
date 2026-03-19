@@ -22,9 +22,9 @@ export function Hero({ dynamic_city, project_counter, hook_headline }: HeroProps
             {/* Background Image */}
             <div className="absolute inset-0 z-0">
                 <img
-                    src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?q=80&w=2000&auto=format&fit=crop"
+                    src="https://images.unsplash.com/photo-1558905226-48a28092440b?q=80&w=2000&auto=format&fit=crop"
                     alt="Landscaping Mérida"
-                    className="w-full h-full object-cover opacity-20"
+                    className="w-full h-full object-cover opacity-30"
                 />
                 <div className="absolute inset-0 bg-gradient-to-r from-background via-background/90 to-transparent" />
                 <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent" />

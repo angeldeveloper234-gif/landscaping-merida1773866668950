@@ -6,30 +6,7 @@ import { config } from "@/config";
 import { Navbar } from "@/components/sections/Navbar";
 import { Footer } from "@/components/sections/Footer";
 import { MobileConversionBar } from "@/components/ui/MobileConversionBar";
-import LegalBotWidget from "@/components/LegalBotWidget";
-
-function ChatbotManager() {
-    const { email, name } = useUser();
-    
-    if (config.landingClientId === "00000000-0000-0000-0000-000000000000") {
-        return null;
-    }
-
-    return (
-        <LegalBotWidget 
-            botId={config.landingClientId}
-            metadata={{
-                source: "landing_landscaping",
-                user_email: email || "anonymous",
-                user_name: name || "anonymous",
-                trade: config.branding.trade,
-                city: config.dynamicContent.city
-            }}
-            supabaseUrl={config.supabase.url}
-            supabaseKey={config.supabase.anonKey}
-        />
-    );
-}
+import { WhatsAppButton } from "@/components/ui/WhatsAppButton";
 
 function App() {
     return (
@@ -43,7 +20,7 @@ function App() {
                     </Routes>
                     <Footer />
                     <MobileConversionBar />
-                    <ChatbotManager />
+                    <WhatsAppButton />
                 </div>
             </Router>
         </UserProvider>
